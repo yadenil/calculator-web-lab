@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Calculator</title>
+    <link rel="stylesheet" href="/css/style (2).css" />
+  </head>
+  <body>
+    <div id="calculator">
+      <input type="text" id="display" disabled />
+      <!-- input is disabled because we are using it as a display panel not as an entry point -->
+      <div id="buttons">
+        <button class="btn" data-value="7" onclick="appendItem('7')">7</button>
+        <button class="btn" data-value="8" onclick="appendItem('8')">8</button>
+        <button class="btn" data-value="9" onclick="appendItem('9')">9</button>
+        <button class="btn operator" data-value="/" onclick="appendItem('/')">
+          /
+        </button>
+
+        <button class="btn" data-value="4" onclick="appendItem('4')">4</button>
+        <button class="btn" data-value="5" onclick="appendItem('5')">5</button>
+        <button class="btn" data-value="6" onclick="appendItem('6')">6</button>
+        <button class="btn operator" data-value="*" onclick="appendItem('*')">
+          *
+        </button>
+
+        <button class="btn" data-value="1" onclick="appendItem('1')">1</button>
+        <button class="btn" data-value="2" onclick="appendItem('2')">2</button>
+        <button class="btn" data-value="3" onclick="appendItem('3')">3</button>
+        <button class="btn operator" data-value="-" onclick="appendItem('-')">
+          -
+        </button>
+
+        <button class="btn" data-value="0" onclick="appendItem('0')">0</button>
+        <button class="btn operator" data-value="+" onclick="appendItem('+')">
+          +
+        </button>
+        <button class="btn operator equal" id="equals" onclick="calculate()">
+          =
+        </button>
+        <button class="btn" id="clear" onclick="clearItem()">C</button>
+      </div>
+    </div>
+    <script src="/js/script.js"></script>
+    <!-- <script src="/js/script.js"></script>   -->
+  </body>
+</html>
